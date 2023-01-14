@@ -1,10 +1,12 @@
-import styles from "./scss/_main.module.scss";
+import "./scss/_main.scss";
+
+import { Navbar } from "./components/index";
 
 function App() {
   return (
-    <div className={styles.app}>
-      App
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 
