@@ -1,7 +1,9 @@
 import styles from "./_Footer.module.scss";
 
-import { FaFacebookF, FaTwitter, FaLinkedin, FaSearchLocation, FaMailBulk } from "react-icons/fa";
+import { FaSearchLocation, FaMailBulk } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+
+import { FooterAbout } from "./index";
 
 const Footer = () => {
     return (
@@ -30,28 +32,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <div className={styles.second}>
-                    <h4 className={styles["second-title"]}>about the company</h4>
-
-                    <p className={styles["second-description"]}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias non dicta hic ad facilis, debitis laudantium nostrum!
-                    </p>
-
-                    <div className={styles["second-social"]}>
-                        <a href="https://www.facebook.com">
-                            <FaFacebookF size={21} />
-                        </a>
-
-                        <a href="https://www.twitter.com">
-                            <FaTwitter size={21} />
-                        </a>
-
-                        <a href="https://www.linkedin.com">
-                            <FaLinkedin size={21} />
-                        </a>
-                    </div>
-                </div>
+                <FooterAbout />
             </div>
         </footer>
     )
