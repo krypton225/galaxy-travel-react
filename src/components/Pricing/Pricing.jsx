@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-import { TopComponent } from "../index";
+import { MainButton, TopComponent } from "../index";
 
 import styles from "./_Pricing.module.scss";
 
@@ -28,7 +26,7 @@ const Pricing = () => {
                                 <li className={styles["features-item"]}>{isPrivate ? "Private Quarters" : "Not private"}</li>
                             </ul>
 
-                            <Link to='/contact' className={styles.btn}>Book</Link>
+                            <MainButton linkTo={"/contact"} text={"book"} />
                         </div>
                     ))
                 }

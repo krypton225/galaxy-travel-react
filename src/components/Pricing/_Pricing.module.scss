@@ -3,7 +3,7 @@
 .pricing {
     width: 100%;
     padding-bottom: 6rem;
-    background-color: map-get($colors, "dark");
+    background-color: #000;
 
     .container {
         margin-top: 5rem;
@@ -62,21 +62,6 @@
             .features-item {
                 margin-block: 0.5rem;
                 font-size: 1.1rem;
-            }
-        }
-
-        .btn {
-            display: block;
-            border-radius: 0.4rem;
-            margin-top: 2rem;
-            padding: 0.55rem 2.5rem;
-            color: map-get($colors, "white");
-            background-color: map-get($colors, "primary");
-            cursor: pointer;
-            @include transition(background-color, 0.3, ease-in-out, 0);
-
-            &:hover {
-                background-color: darken(map-get($colors, "primary"), $amount: 10%);
             }
         }
     }

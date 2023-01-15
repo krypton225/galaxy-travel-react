@@ -1,0 +1,18 @@
+@import "../../scss/main";
+
+.btn {
+    display: block;
+    border-radius: 0.4rem;
+    border: 1px solid #fff;
+    margin-top: 2rem;
+    padding: 0.55rem 2.7rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: map-get($colors, "white");
+    cursor: pointer;
+    @include transition(background-color, 0.3, ease-in-out, 0);
+
+    &:hover {
+        background-color: darken(map-get($colors, "primary"), $amount: 35%);
+    }
+}
