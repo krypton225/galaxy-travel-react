@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./scss/_main.scss";
-
 import ALLRoutes from "./data/navbarItems";
 
 import { Navbar, Footer } from "./components/index";
