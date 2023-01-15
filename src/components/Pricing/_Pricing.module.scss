@@ -1,3 +1,83 @@
+@import "../../scss/main";
+
 .pricing {
     width: 100%;
+    padding-bottom: 6rem;
+    background-color: map-get($colors, "dark");
+
+    .container {
+        margin-top: 5rem;
+        @include grid-columns(3);
+        gap: 1rem;
+
+        @include breakpoint(tablet) {
+            width: 90%;
+            @include grid-columns(2);
+        }
+
+        @include breakpoint(mid-screen) {
+            width: 75%;
+            @include grid-columns(1);
+        }
+
+        @include breakpoint(mobile) {
+            width: 90%;
+            @include grid-columns(1);
+        }
+    }
+
+    .card {
+        width: 100%;
+        border: 0.1rem solid white;
+        border-radius: 0.8rem;
+        padding-block: 4rem;
+        padding-inline: 1.4rem;
+        text-align: center;
+        @include flex-center-column;
+        color: white;
+
+        .title {
+            font-size: 1.6rem;
+            text-transform: capitalize;
+        }
+
+        .line {
+            width: 4rem;
+            height: 0.2rem;
+            border-radius: 2rem;
+            margin-block: 1rem;
+            margin-inline: auto;
+            background-color: white;
+        }
+
+        .coin {
+            margin-block: 2rem;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .features-list {
+            @include flex-center-column;
+
+            .features-item {
+                margin-block: 0.5rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        .btn {
+            display: block;
+            border-radius: 0.4rem;
+            margin-top: 2rem;
+            padding: 0.55rem 2.5rem;
+            color: map-get($colors, "white");
+            background-color: map-get($colors, "primary");
+            cursor: pointer;
+            @include transition(background-color, 0.3, ease-in-out, 0);
+
+            &:hover {
+                background-color: darken(map-get($colors, "primary"), $amount: 10%);
+            }
+        }
+    }
 }
