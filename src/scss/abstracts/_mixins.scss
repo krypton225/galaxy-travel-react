@@ -32,40 +32,11 @@
             @content;
         }
     }
-
-    @if $point == large {
-        @media only screen and (max-width: 1200px) {
-            @content;
-        }
-    }
 }
 
 @mixin grid-columns($columns-number) {
     display: grid;
     grid-template-columns: repeat($columns-number, 1fr);
-}
-
-@mixin flex-start-row {
-    @include prefixing(display, flex);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-end-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, flex-end);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-around-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, space-around);
-    @include prefixing(align-items, center);
-}
-
-@mixin flex-evenly-row {
-    @include prefixing(display, flex);
-    @include prefixing(justify-content, space-evenly);
-    @include prefixing(align-items, center);
 }
 
 @mixin flex-center-row {
@@ -101,7 +72,6 @@
 }
 
 @mixin reset-bg {
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -125,15 +95,4 @@
     } @else if $func == linear {
         @include prefixing(transition, $prop #{$time}s linear #{$delaying}s);
     }
-}
-
-@mixin fading-transition($time, $func) {
-    @include prefixing(transition, visibility);
-    @include prefixing(transition, opacity);
-    transition: visibility #{$time}s #{$func}, opacity #{$time}s #{$func};
-}
-
-@mixin center-x {
-    display: block;
-    @include prefixing(margin-inline, auto);
 }

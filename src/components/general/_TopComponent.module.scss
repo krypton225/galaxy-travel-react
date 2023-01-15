@@ -7,8 +7,7 @@
     @include flex-center-column;
     background-image: url("../../assets/images/heroImg.jpg");
     background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include reset-bg;
     background-attachment: fixed;
     color: white;
 
