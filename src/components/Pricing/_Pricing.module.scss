@@ -7,11 +7,14 @@
 
     .container {
         margin-top: 5rem;
+        padding-inline: 4rem;
         @include grid-columns(3);
         gap: 1rem;
 
         @include breakpoint(tablet) {
             width: 90%;
+            margin-inline: auto;
+            padding-inline: 1rem;
             @include grid-columns(2);
         }
 
@@ -21,7 +24,7 @@
         }
 
         @include breakpoint(mobile) {
-            width: 90%;
+            width: 94%;
             @include grid-columns(1);
         }
     }

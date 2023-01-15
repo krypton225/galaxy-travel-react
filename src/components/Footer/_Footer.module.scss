@@ -7,12 +7,14 @@
     .container {
         padding-top: 4rem;
         padding-bottom: 5rem;
+        padding-inline: 4rem;
         @include grid-columns(2);
         align-items: start;
         gap: 5rem;
 
         @include breakpoint(tablet) {
             width: 90%;
+            padding-inline: 2rem;
             @include grid-columns(1);
         }
     }
