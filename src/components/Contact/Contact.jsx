@@ -11,11 +11,15 @@ const Contact = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    const submitHandler = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <section className={styles.contact}>
             <TopComponent title="contact" description="contact GLX travel" />
 
-            <form className={styles["custom-form"]}>
+            <form className={styles["custom-form"]} onSubmit={submitHandler}>
                 <label htmlFor="name">your name</label>
                 <input type="text" name="name" id="name" className={styles["custom-form-name"]} autoComplete="new-password" />
 
