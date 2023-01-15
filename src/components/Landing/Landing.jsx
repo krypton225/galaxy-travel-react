@@ -1,6 +1,6 @@
 import styles from "./_Landing.module.scss";
 
-import VideoLanding from "./VideoLanding";
+import { VideoLanding, Buttons } from "./index";
 
 const Landing = () => {
     return (
@@ -12,10 +12,7 @@ const Landing = () => {
 
                 <p className={styles["hero-section-description"]}>world's first civilian space travel</p>
 
-                <div className={styles["hero-section-buttons"]}>
-                    <button type="button" title="Training">training</button>
-                    <button type="button" title="Launch" className={styles["btn-bg"]}>launch</button>
-                </div>
+                <Buttons />
             </div>
         </section>
     )
