@@ -16,7 +16,6 @@ const Navbar = () => {
 
     useEffect(() => {
         checkScrolling();
-        console.log("Yes!");
     }, [isScrolled]);
 
     const checkScrolling = () => {
@@ -38,7 +37,7 @@ const Navbar = () => {
             <ul className={`${styles.list} ${openToggler ? styles.show : ""}`}>
                 {
                     NavbarItems.map(({ id, linkText, routeLink }) => (
-                        <ItemList key={id} linkText={linkText} routeLink={routeLink} />
+                        <ItemList key={id} linkText={linkText} routeLink={routeLink} closeAfterClickItem={clickOpenTogglerHandler} />
                     ))
                 }
             </ul>

@@ -1,7 +1,7 @@
-const ItemList = ({ routeLink, linkText }) => {
+const ItemList = ({ routeLink, linkText, closeAfterClickItem }) => {
     return (
         <li>
-            <a href={routeLink}>{linkText}</a>
+            <a href={routeLink} onClick={closeAfterClickItem}>{linkText}</a>
         </li>
     )
 }
