@@ -1,8 +1,14 @@
+import { useEffect } from "react";
+
 import styles from "./_Landing.module.scss";
 
 import { VideoLanding, Buttons } from "./index";
 
 const Landing = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <header className={styles.landing}>
             <VideoLanding />
