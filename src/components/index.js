@@ -7,3 +7,5 @@ export { default as Pricing } from "./Pricing/Pricing";
 export { default as Training } from "./Training/Training";
 
 export { default as Contact } from "./Contact/Contact";
+
+export { default as Logo } from "./general/Logo";

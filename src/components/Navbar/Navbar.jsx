@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
-import styles from "./_Navbar.module.scss";
+import { Logo } from "../index";
 
 import { Toggler, ItemList } from "./index";
+
+import styles from "./_Navbar.module.scss";
 
 import NavbarItems from "../../data/navbarItems";
 
@@ -30,9 +32,7 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.navbar} ${isScrolled ? styles["scroll"] : ""}`}>
-            <h1 className={styles.logo}>
-                <a href="/">galaxy travel</a>
-            </h1>
+            <Logo />
 
             <ul className={`${styles.list} ${openToggler ? styles.show : ""}`}>
                 {
