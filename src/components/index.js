@@ -13,3 +13,5 @@ export { default as Logo } from "./general/Logo";
 export { default as TopComponent } from "./general/TopComponent";
 
 export { default as MainButton } from "./general/MainButton";
+
+export { default as Footer } from "./general/Footer";

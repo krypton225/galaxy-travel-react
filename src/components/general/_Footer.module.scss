@@ -1,0 +1,73 @@
+@import "../../scss/main";
+
+.footer {
+    background-color: #000;
+    color: white;
+
+    .container {
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        @include grid-columns(2);
+        align-items: start;
+        gap: 5rem;
+
+        @include breakpoint(tablet) {
+            width: 90%;
+            @include grid-columns(1);
+        }
+    }
+
+    .first {
+        width: 100%;
+
+        &-top,
+        &-middle,
+        &-bottom {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            color: white;
+        }
+
+        &-top {
+            &-address {
+                display: block;
+                text-transform: capitalize;
+            }
+        }
+
+        &-middle {
+            margin-block: 2.5rem;
+        }
+    }
+
+    .second {
+        width: 100%;
+
+        &-title {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        &-description {
+            margin-block: 1.3rem;
+            line-height: 1.6;
+        }
+
+        &-social {
+            width: 100%;
+
+            a {
+                display: inline-block;
+                padding-inline-start: 0;
+                margin-inline-end: 1.6rem;
+                color: white;
+                @include transition(transform, 0.4, ease-in-out, 0);
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
+            }
+        }
+    }
+}

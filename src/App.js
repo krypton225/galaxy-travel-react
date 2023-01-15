@@ -4,7 +4,7 @@ import "./scss/_main.scss";
 
 import ALLRoutes from "./data/navbarItems";
 
-import { Navbar } from "./components/index";
+import { Navbar, Footer } from "./components/index";
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
             ))
           }
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </>
   );
