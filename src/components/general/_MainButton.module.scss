@@ -1,10 +1,12 @@
 @import "../../scss/main";
 
 .btn {
+    width: fit-content;
     display: block;
     border-radius: 0.4rem;
     border: 1px solid #fff;
     margin-top: 2rem;
+    margin-inline: auto;
     padding: 0.55rem 2.7rem;
     text-transform: capitalize;
     font-size: 1.1rem;

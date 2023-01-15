@@ -1,0 +1,80 @@
+@import "../../scss/main";
+
+.training {
+    width: 100%;
+
+    .details {
+        width: 100%;
+        padding-block: 6rem;
+        text-align: center;
+        @include grid-columns(2);
+        align-items: center;
+        gap: 3rem;
+        background: #000;
+        color: white;
+
+        @include breakpoint(tablet) {
+            @include grid-columns(1);
+        }
+
+        .first {
+            width: 80%;
+            margin: 0 auto;
+            padding-inline: 1rem;
+            text-align: center;
+
+            &-title {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                text-transform: capitalize;
+            }
+
+            &-description {
+                line-height: 1.8;
+            }
+        }
+
+        .second {
+            width: 100%;
+            position: relative;
+
+            @include breakpoint(tablet) {
+                margin-inline: auto;
+                margin-top: 2rem;
+            }
+
+            img {
+                border: 1px solid rgba(255, 255, 255, 0.137);
+                border-radius: 1rem;
+            }
+
+            &-img1 {
+                width: 20rem;
+                border-radius: 1rem;
+                margin-top: 2rem;
+                position: relative;
+                z-index: 3;
+
+                @include breakpoint(tablet) {
+                    margin-inline: auto;
+                }
+            }
+
+            &-img2 {
+                width: 20rem;
+                border-radius: 1rem;
+                position: absolute;
+                top: -5%;
+                right: 10%;
+                z-index: 1;
+
+                @include breakpoint(tablet) {
+                    position: relative;
+                    right: 0;
+                    margin-top: 2rem;
+                    margin-inline: auto;
+                }
+            }
+        }
+    }
+}
