@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import styles from "./_Navbar.module.scss";
 
+import Toggler from "./Toggler";
+
 import NavbarItems from "../../data/navbarItems";
 
 const Navbar = () => {
@@ -43,11 +45,7 @@ const Navbar = () => {
                 }
             </ul>
 
-            <button type="button" className={`${styles.toggler}`} title="Toggler Button" onClick={clickOpenTogglerHandler}>
-                <span className={openToggler ? styles["change-1"] : ""}></span>
-                <span className={openToggler ? styles["change-2"] : ""}></span>
-                <span className={openToggler ? styles["change-3"] : ""}></span>
-            </button>
+            <Toggler openToggler={openToggler} clickOpenTogglerHandler={clickOpenTogglerHandler} />
         </nav>
     )
 }
