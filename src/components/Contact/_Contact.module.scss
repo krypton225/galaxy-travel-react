@@ -1,0 +1,39 @@
+@import "../../scss/main";
+
+.contact {
+    width: 100%;
+    background-color: #000;
+    color: white;
+
+    .custom-form {
+        width: 32rem;
+        margin-inline: auto;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        @include flex-center-column;
+
+        @include breakpoint(mid-screen) {
+            width: 85%;
+        }
+
+        input:not([type="submit"]),
+        textarea {
+            width: 100%;
+            padding: 0.6rem 0.6rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 0.3rem;
+            outline: none;
+            background-color: rgb(58, 57, 57);
+            resize: vertical;
+        }
+
+        label {
+            width: 100%;
+            display: block;
+            margin-bottom: 0.4rem;
+            text-align: start;
+            text-transform: capitalize;
+        }
+    }
+}

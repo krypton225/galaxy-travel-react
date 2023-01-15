@@ -18,3 +18,8 @@
         background-color: darken(map-get($colors, "primary"), $amount: 35%);
     }
 }
+
+.submit {
+    background-color: transparent;
+    color: white;
+}

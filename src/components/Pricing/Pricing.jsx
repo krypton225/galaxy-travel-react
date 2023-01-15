@@ -32,7 +32,7 @@ const Pricing = () => {
                                 <li className={styles["features-item"]}>{isPrivate ? "Private Quarters" : "Not private"}</li>
                             </ul>
 
-                            <MainButton linkTo={"/contact"} text={"book"} />
+                            <MainButton linkTo={"/contact"} text={"book"} submitBtn={false} />
                         </div>
                     ))
                 }

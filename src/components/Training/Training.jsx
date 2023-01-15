@@ -23,7 +23,7 @@ const Training = () => {
                     <p className={styles["first-description"]}>Thorough training is a necessity when traveling to space.
                         We offer all inclusive training for pre-flight and in-flight scenarios.</p>
 
-                    <MainButton linkTo={"/contact"} text={"contact"} />
+                    <MainButton linkTo={"/contact"} text={"contact"} submitBtn={false} />
                 </div>
 
                 <div className={styles.second}>
