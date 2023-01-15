@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./_Navbar.module.scss";
 
-import Toggler from "./Toggler";
+import { Toggler, ItemList } from "./index";
 
 import NavbarItems from "../../data/navbarItems";
 
@@ -38,9 +38,7 @@ const Navbar = () => {
             <ul className={`${styles.list} ${openToggler ? styles.show : ""}`}>
                 {
                     NavbarItems.map(({ id, linkText, routeLink }) => (
-                        <li key={id}>
-                            <a href={routeLink}>{linkText}</a>
-                        </li>
+                        <ItemList key={id} linkText={linkText} routeLink={routeLink} />
                     ))
                 }
             </ul>
