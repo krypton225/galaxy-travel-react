@@ -1,10 +1,11 @@
+import { useEffect } from "react";
+
 import { MainButton, TopComponent } from "../index";
 
 import styles from "./_Training.module.scss";
 
 import Image1 from "../../assets/images/moon.jpg";
 import Image2 from "../../assets/images/pod.jpg";
-import { useEffect } from "react";
 
 const Training = () => {
     useEffect(() => {

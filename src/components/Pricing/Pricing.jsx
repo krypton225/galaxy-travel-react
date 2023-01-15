@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { MainButton, TopComponent } from "../index";
 
 import styles from "./_Pricing.module.scss";
@@ -5,6 +7,10 @@ import styles from "./_Pricing.module.scss";
 import PricingData from "../../data/pricing";
 
 const Pricing = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <section className={styles.pricing}>
             <TopComponent title="pricing" description="choose your trip!" />
