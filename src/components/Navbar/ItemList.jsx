@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 const ItemList = ({ routeLink, linkText, closeAfterClickItem }) => {
     return (
         <li>
-            <a href={routeLink} onClick={closeAfterClickItem}>{linkText}</a>
+            <Link to={routeLink} onClick={closeAfterClickItem}>
+                {linkText}
+            </Link>
         </li>
     )
 }
