@@ -1,6 +1,6 @@
-import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
-
 import styles from "./_Footer.module.scss";
+
+import FooterAboutData from "../../data/footer-about";
 
 const FooterAbout = () => {
     return (
@@ -13,17 +13,13 @@ const FooterAbout = () => {
             </p>
 
             <div className={styles["second-social"]}>
-                <a href="https://www.facebook.com">
-                    <FaFacebookF size={21} />
-                </a>
-
-                <a href="https://www.twitter.com">
-                    <FaTwitter size={21} />
-                </a>
-
-                <a href="https://www.linkedin.com">
-                    <FaLinkedin size={21} />
-                </a>
+                {
+                    FooterAboutData.map(({ id, urlLink, linkTitle, iconName, hasTarget, rel }) => (
+                        <a href={urlLink} key={id} title={linkTitle} target={hasTarget ? "_blank" : ""} rel={rel}>
+                            {iconName}
+                        </a>
+                    ))
+                }
             </div>
         </div>
     )
