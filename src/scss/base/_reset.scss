@@ -15,6 +15,24 @@ body {
     // height: 2000px;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+    border-radius: 4.5rem;
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
 a {
     text-decoration: none !important;
 }
