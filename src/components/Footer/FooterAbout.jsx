@@ -5,7 +5,7 @@ import FooterAboutData from "../../data/footer-about";
 const FooterAbout = () => {
     return (
         <div className={styles.second}>
-            <h4 className={styles["second-title"]}>about the company</h4>
+            <h3 className={styles["second-title"]}>about the company</h3>
 
             <p className={styles["second-description"]}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

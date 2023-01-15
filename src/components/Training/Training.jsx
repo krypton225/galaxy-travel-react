@@ -18,7 +18,7 @@ const Training = () => {
 
             <div className={styles.details}>
                 <div className={styles.first}>
-                    <h4 className={styles["first-title"]}>training</h4>
+                    <h3 className={styles["first-title"]}>training</h3>
 
                     <p className={styles["first-description"]}>Thorough training is a necessity when traveling to space.
                         We offer all inclusive training for pre-flight and in-flight scenarios.</p>
