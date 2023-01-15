@@ -13,6 +13,11 @@
     background-color: transparent;
     text-align: center;
     z-index: 99999;
+    @include transition(background-color, 0.4, ease-in-out, 0.1);
+
+    &.scroll {
+        background-color: #212121c7;
+    }
 
     @include breakpoint(mid-screen) {
         padding-inline: 0.7rem;
