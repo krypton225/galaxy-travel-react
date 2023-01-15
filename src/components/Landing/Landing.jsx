@@ -1,11 +1,11 @@
 import styles from "./_Landing.module.scss";
 
-import VideoLanding from "../../assets/videos/space.mp4"
+import VideoLanding from "./VideoLanding";
 
 const Landing = () => {
     return (
         <section className={styles.landing}>
-            <video src={VideoLanding} autoPlay muted loop></video>
+            <VideoLanding />
 
             <div className={styles["hero-section"]}>
                 <h2 className={styles["hero-section-title"]}>galaxy. travel.</h2>
