@@ -4,7 +4,7 @@ import { VideoLanding, Buttons } from "./index";
 
 const Landing = () => {
     return (
-        <section className={styles.landing}>
+        <header className={styles.landing}>
             <VideoLanding />
 
             <div className={styles["hero-section"]}>
@@ -14,7 +14,7 @@ const Landing = () => {
 
                 <Buttons />
             </div>
-        </section>
+        </header>
     )
 }
 

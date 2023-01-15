@@ -9,3 +9,5 @@ export { default as Training } from "./Training/Training";
 export { default as Contact } from "./Contact/Contact";
 
 export { default as Logo } from "./general/Logo";
+
+export { default as TopComponent } from "./general/TopComponent";

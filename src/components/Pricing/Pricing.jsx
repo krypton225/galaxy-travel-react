@@ -1,8 +1,12 @@
+import { TopComponent } from "../index";
+
+import styles from "./_Pricing.module.scss";
+
 const Pricing = () => {
     return (
-        <div>
-            Pricing
-        </div>
+        <section>
+            <TopComponent title="pricing" description="choose your trip!" />
+        </section>
     )
 }
 
