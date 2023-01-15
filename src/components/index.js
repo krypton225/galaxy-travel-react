@@ -14,4 +14,4 @@ export { default as TopComponent } from "./general/TopComponent";
 
 export { default as MainButton } from "./general/MainButton";
 
-export { default as Footer } from "./general/Footer";
+export { default as Footer } from "./Footer/Footer";
