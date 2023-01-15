@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./scss/_main.scss";
 
-import ALLRoutes from "./data/routes";
+import ALLRoutes from "./data/navbarItems";
 
 import { Navbar } from "./components/index";
 
@@ -14,8 +14,8 @@ function App() {
 
         <Routes>
           {
-            ALLRoutes.map(({ id, routeLink, path }) => (
-              <Route key={id} path={path} element={routeLink} />
+            ALLRoutes.map(({ id, routeComponent, sendTo }) => (
+              <Route key={id} path={sendTo} element={routeComponent} />
             ))
           }
         </Routes>

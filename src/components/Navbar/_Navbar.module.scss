@@ -27,6 +27,7 @@
         text-transform: capitalize;
 
         a {
+            position: relative;
             padding: 0.5rem;
             display: block;
             font-size: 1.6rem;
@@ -66,6 +67,7 @@
             margin-inline: 1.2rem;
 
             a {
+                position: relative;
                 display: block;
                 padding-block: 1rem;
                 font-weight: 600;
@@ -73,6 +75,10 @@
 
                 @include breakpoint(mid-screen) {
                     color: map-get($colors, "dark");
+
+                    &::before {
+                        content: none;
+                    }
                 }
             }
         }

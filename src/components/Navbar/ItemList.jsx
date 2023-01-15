@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const ItemList = ({ routeLink, linkText, closeAfterClickItem }) => {
+const ItemList = ({ pathLinkRoute, linkText, closeAfterClickItem }) => {
     return (
         <li>
-            <Link to={routeLink} onClick={closeAfterClickItem}>
+            <Link to={pathLinkRoute} onClick={closeAfterClickItem}>
                 {linkText}
             </Link>
         </li>
