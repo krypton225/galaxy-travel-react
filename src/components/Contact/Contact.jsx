@@ -6,6 +6,8 @@ import TopComponent from "../general/TopComponent";
 
 import styles from "./_Contact.module.scss";
 
+import { InputContact } from "./index";
+
 const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -20,14 +22,11 @@ const Contact = () => {
             <TopComponent title="contact" description="contact GLX travel" />
 
             <form className={styles["custom-form"]} onSubmit={submitHandler}>
-                <label htmlFor="name">your name</label>
-                <input type="text" name="name" id="name" className={styles["custom-form-name"]} autoComplete="new-password" />
+                <InputContact labelText="your name" idInput="name" inputType="text" inputName="name" inputStyleClassName="custom-form-name" />
 
-                <label htmlFor="email">email</label>
-                <input type="email" name="email" id="email" className={styles["custom-form-email"]} autoComplete="new-password" />
+                <InputContact labelText="email" idInput="email" inputType="email" inputName="email" inputStyleClassName="custom-form-email" />
 
-                <label htmlFor="subject">subject</label>
-                <input type="text" name="subject" id="subject" className={styles["custom-form-subject"]} autoComplete="new-password" />
+                <InputContact labelText="subject" idInput="subject" inputType="text" inputName="subject" inputStyleClassName="custom-form-subject" />
 
                 <label htmlFor="details">details</label>
                 <textarea name="details" id="details" autoComplete="new-password"></textarea>
