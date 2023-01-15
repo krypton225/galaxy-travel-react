@@ -1,0 +1,74 @@
+@import "../../scss/abstracts/mixins";
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .hero-section {
+        width: 80%;
+        @include hero-img;
+        @include flex-center-column;
+        color: white;
+        text-align: center;
+        z-index: 99;
+
+        @include breakpoint(mid-screen) {
+            width: 90%;
+        }
+
+        &-title {
+            font-size: 3.3rem;
+            text-transform: capitalize;
+
+            @include breakpoint(mid-screen) {
+                font-size: 2rem;
+            }
+        }
+
+        &-description {
+            margin-block: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            @include breakpoint(mid-screen) {
+                font-size: 1rem;
+            }
+        }
+
+        &-buttons {
+            @include flex-between-row;
+
+            button {
+                margin-inline: 0.3rem;
+                padding-block: 0.6rem;
+                padding-inline: 2.5rem;
+                border: 1px solid;
+                border-radius: 0.23rem;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+                @include transition(background-color, 0.4, ease-in, 0);
+
+                &:hover {
+                    background-color: darken(#525252, 5%);
+                }
+            }
+
+            .btn-bg {
+                background-color: rgba(121, 121, 121, 0.753);
+            }
+        }
+    }
+}

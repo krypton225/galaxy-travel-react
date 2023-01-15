@@ -1,18 +1,18 @@
+@import "../../scss/abstracts/colors";
 @import "../../scss/abstracts/mixins";
 
 .navbar {
     width: 100%;
     position: relative;
-    padding-block: 0.3rem;
+    padding-block: 0.6rem;
     padding-inline: 1.2rem;
     @include flex-between-row;
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: transparent;
-    background-color: green;
+    background-color: transparent;
     text-align: center;
-    // color: white;
+    z-index: 99999;
 
     @include breakpoint(mid-screen) {
         padding-inline: 0.7rem;
@@ -24,15 +24,16 @@
         a {
             padding: 0.5rem;
             display: block;
+            font-size: 1.6rem;
+            color: white;
         }
     }
 
     .list {
         display: flex;
-        // background-color: red;
         text-transform: capitalize;
         transform-origin: right top;
-        @include transition(all, 0.4, ease-in-out, 0);
+        @include transition(all, 0.4, ease-in-out, 0.3);
 
         @include breakpoint(mid-screen) {
             width: 94%;
@@ -44,11 +45,11 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            // background-color: white;
-            background-color: red;
+            background-color: white;
             @include fade(hide);
+            box-shadow: 0 1rem 1rem rgba(49, 49, 49, 0.377);
 
-            .show {
+            &.show {
                 top: 5rem;
                 @include fade(show);
             }
@@ -62,6 +63,12 @@
             a {
                 display: block;
                 padding-block: 1rem;
+                font-weight: 600;
+                color: white;
+
+                @include breakpoint(mid-screen) {
+                    color: map-get($colors, "dark");
+                }
             }
         }
     }
@@ -84,8 +91,23 @@
             height: 0.15rem;
             border-radius: 3rem;
             display: block;
-            background-color: red;
+            background-color: white;
             @include transition(all, 0.3, ease-in-out, 0);
+
+            &.change-1 {
+                transform: rotate(-45deg) translate(0, 6px);
+                transition-delay: 0.3s;
+            }
+
+            &.change-2 {
+                transform: translateX(-20px);
+                @include fade(hide);
+            }
+
+            &.change-3 {
+                transform: rotate(45deg) translate(0, -6px);
+                transition-delay: 0.4s;
+            }
         }
     }
 }

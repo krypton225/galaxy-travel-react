@@ -1,11 +1,12 @@
 import "./scss/_main.scss";
 
-import { Navbar } from "./components/index";
+import { Navbar, Landing } from "./components/index";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Landing />
     </>
   );
 }
