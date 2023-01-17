@@ -17,18 +17,20 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        checkScrolling();
-    }, [isScrolled]);
-
-    const checkScrolling = () => {
-        window.addEventListener("scroll", function () {
+        function checkScrolling() {
             if (window.scrollY > 250) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
-        });
-    }
+        }
+
+        window.addEventListener("scroll", checkScrolling);
+
+        return () => {
+            window.removeEventListener("scroll", checkScrolling);
+        }
+    }, [isScrolled]);
 
     return (
         <nav className={`${styles.navbar} ${isScrolled ? styles["scroll"] : ""}`}>
