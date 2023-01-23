@@ -1,4 +1,12 @@
-![C3132132123221apture](https://user-images.githubusercontent.com/73050798/212603269-6da422bf-7b98-4553-90e6-ba9459f8643d.PNG)
+# Screenshots of the app
+
+![localhost_3000_](https://user-images.githubusercontent.com/73050798/214035694-07a00cdb-bb87-4c2f-a4b6-2661a515f69f.png)
+
+![localhost_3000_ (1)](https://user-images.githubusercontent.com/73050798/214035714-f331242e-971c-479a-952d-4bbb85596f5e.png)
+
+![localhost_3000_ (2)](https://user-images.githubusercontent.com/73050798/214035741-f943799a-3b15-4a07-b36b-ebb71c42cb3a.png)
+
+![localhost_3000_ (3)](https://user-images.githubusercontent.com/73050798/214035745-d2015488-8bae-4cbd-b1a7-4a8fb8e1f28b.png)
 
 # Getting Started with Create React App
 
